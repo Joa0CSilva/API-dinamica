@@ -1,2 +1,1 @@
-# api-din-mica
-# api-din-mica
+# API Dinâmica sobre pokémon

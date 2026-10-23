@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #323538;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #ffcb05;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+
+    background-color: #2b2a28;
+    border-radius: 8px;
+}
+
+.botao {
+    min-width: 120px;
+    max-width: 180px;
+    height: 50px;
+    margin: 10px;
+
+    background-color: #ffcb05;
+    color: #ff0202;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.botao:hover {
+    background-color: #ff0202;
+    color: #ffcb05;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.container-tipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+p {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
