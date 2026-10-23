@@ -65,7 +65,17 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+
+    width: 800px;
+
+    padding: 25px;
+
+    background-color: #2b2a28;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 p {
@@ -84,6 +94,11 @@ p {
     align-items: center;
     justify-content: center;
     margin: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
 }
 
 .imagem {

@@ -7,7 +7,7 @@ async function tiposPage() {
   const dados = await resposta.json();
 
   const titulo = document.createElement("h1");
-  titulo.textContent = "Tipos de Pokémon";
+  titulo.textContent = "Selecione um tipo de Pokémon";
   root.replaceChildren(titulo);
 
   const botao = document.createElement("button");
@@ -30,12 +30,14 @@ async function tiposPage() {
     const botao = document.createElement("button");
     botao.textContent = dados.results[i].name;
     botao.classList.add("botao");
-    root.appendChild(botao);
+    container.appendChild(botao);
 
     botao.onclick = function () {
       pokemonsPage(dados.results[i].name);
     };
   }
+
+  root.replaceChildren(titulo, container);
 }
 
 tiposPage();
@@ -46,7 +48,7 @@ async function pokemonsPage(tipo) {
   const dados = await reposta.json();
 
   const titulo = document.createElement("h1");
-
+  titulo.textContent = "Pokémons do tipo " + tipo;
   root.replaceChildren(titulo);
 
   const voltar = document.createElement("button");
